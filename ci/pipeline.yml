@@ -1,0 +1,25 @@
+resources:
+- name: trial-psa-front
+  type: git
+  source:
+    uri: https://github.com/MapleInSpring/trial-psa-front.git
+    branch: master
+    skip_ssl_verification: true
+- name: deploy
+  type: cf
+  source:
+    api: https://api.run.pivotal.io
+    username: {{pcf_username}}
+    password: {{pcf_password}}
+    organization: wanyf-org
+    space: AfterLab
+    skip_cert_check: true
+
+jobs:
+- name: trial-psa-front-get
+  plan:
+  - get: trial-psa-front
+    trigger: true
+  - put: deploy
+    params:
+      manifest: trial-psa-front/manifest.yml

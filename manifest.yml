@@ -1,0 +1,4 @@
+---
+applications:
+- name: trial-psa-front
+  command: ng serve
