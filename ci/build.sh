@@ -10,5 +10,9 @@ node_modules/@angular/cli/bin/ng build -prod --aot
 
 cp -a dist ../
 
+cp Staticfile ../
+
 ls ../dist
+
+ls ..
 
