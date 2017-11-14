@@ -20,6 +20,10 @@ jobs:
   plan:
   - get: trial-psa-front
     trigger: true
+  - task: build
+    file: trial-psa-front/ci/build.yml
   - put: deploy
     params:
       manifest: trial-psa-front/manifest.yml
+      path: dist/
+

@@ -1,0 +1,16 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: node
+    tag: "8"
+
+inputs:
+- name: trial-psa-front
+
+outputs:
+- name: dist
+
+run:
+  path: trial-psa-front/ci/build.sh

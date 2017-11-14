@@ -1,4 +1,4 @@
 ---
 applications:
 - name: trial-psa-front
-  command: ng serve
+  buildpack: staticfile_buildpack
