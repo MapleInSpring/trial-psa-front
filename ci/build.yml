@@ -11,7 +11,6 @@ inputs:
 
 outputs:
 - name: dist
-- name: Staticfile
 
 run:
   path: trial-psa-front/ci/build.sh

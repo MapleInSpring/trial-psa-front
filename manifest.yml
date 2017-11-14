@@ -2,4 +2,3 @@
 applications:
 - name: trial-psa-front
   buildpack: staticfile_buildpack
-  random-route: true
