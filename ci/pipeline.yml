@@ -26,4 +26,5 @@ jobs:
     params:
       manifest: trial-psa-front/manifest.yml
       path: dist/
+      file: trial-psa-front/Staticfile
 
