@@ -12,6 +12,6 @@ touch dist/Staticfile
 
 echo "pushstate: enabled" >> dist/Staticfile
 
-cp -a dist ../dist
+cp -a dist ../
 
-ls ../dist/dist
+ls ../dist
