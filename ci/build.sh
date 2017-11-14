@@ -14,4 +14,4 @@ echo "pushstate: enabled" >> dist/Staticfile
 
 cp -a dist ../dist
 
-ls ../dist
+ls ../dist/dist
