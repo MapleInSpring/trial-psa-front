@@ -6,7 +6,9 @@ cd trial-psa-front/
 
 npm install
 
-ng build -prod --aot
+ls node_modules/@angular/cli/bin
+
+node_modules/@angular/cli/bin/ng build -prod --aot
 
 touch dist/Staticfile
 
