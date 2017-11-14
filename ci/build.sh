@@ -2,7 +2,7 @@
 
 set -e -u -x
 
-cd trial-psa/
+cd trial-psa-front/
 
 npm install
 
